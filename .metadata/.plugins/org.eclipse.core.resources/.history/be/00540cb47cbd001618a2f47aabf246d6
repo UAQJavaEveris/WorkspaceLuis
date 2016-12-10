@@ -1,0 +1,99 @@
+package mx.com.everis.javaweb.ws.services;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+import mx.com.everis.javaweb.conections.Conexion;
+import mx.com.everis.javaweb.model.Personaje;
+
+public class Crud implements Actions {
+	Conexion conexion = null;
+	@Override
+	public boolean insertPerson(long clave, String nombre, String empresa){
+		
+		boolean status=false; 
+		
+		conexion.connect();
+		try {
+	         PreparedStatement consulta = conexion.getCon().prepareStatement("INSERT INTO PERSONAJES(PERS_NOMBRE, PERS_EMPREESA) VALUES(?,?)");
+	         consulta.setString(1, nombre);
+	         consulta.setString(2, empresa);
+			 consulta.executeUpdate();
+			 status=true;
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		conexion.disconnect();
+		return status; 
+	}
+	
+/**	@Override
+	public List<Personaje> lista() {
+		List<Personaje> lista = null;
+		conexion.connect();
+		
+		try {
+	         PreparedStatement consulta = conexion.getCon().prepareStatement("SELECT PERS_CLAVE AS CLAVE, PERS_NOMBRE AS NOMBRE, PERS_EMPRESA AS EMPRESA FROM PERSONAJES");	        		 
+			 ResultSet rs= consulta.executeQuery();
+			while(rs.next()){
+				lista.add(new Personaje(rs.getInt(1),rs.getString("NOMBRE"),rs.getString("EMPRESA")));
+				System.out.println(rs.getInt(1)+" "+rs.getString("NOMBRE")+" "+rs.getString("EMPRESA"));				
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		conexion.disconnect();
+		
+		return lista;
+	}**/
+
+	@Override
+	public boolean updatePerson(long clave, String nombre, String empresa){
+		boolean status=false; 
+		
+		conexion.connect();
+		try {
+	         PreparedStatement consulta = conexion.getCon().prepareStatement("UPDATE PERSONAJES SET PERS_NOMBRE = ?, SET PERS_EMPRESA = ? WHERE PERS_CLAVE = ?");
+	         consulta.setString(1, nombre);
+	         consulta.setString(2, empresa);
+	         consulta.setLong(3,clave);
+			 consulta.executeUpdate();
+			 status=true;
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		conexion.disconnect();
+		return status; 
+		
+	}
+
+
+	@Override
+	public boolean deletePerson(int clave){
+		boolean status=false; 
+		
+		conexion.connect();
+		try {
+	         PreparedStatement consulta = conexion.getCon().prepareStatement("DELETE FROM PERSONAJES WHERE PERS_CLAVE = ?");
+	         consulta.setInt(1,clave);
+			 consulta.executeUpdate();
+			 status=true;
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		conexion.disconnect();
+		return status; 
+		
+	}
+
+}

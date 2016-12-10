@@ -1,0 +1,8 @@
+package mx.com.everis.javaweb.servlet;
+
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet("/ServletInsert")
+public class Servlet2 extends HttpServlet{
+
+}

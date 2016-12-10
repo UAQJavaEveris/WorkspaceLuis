@@ -1,0 +1,10 @@
+package mx.com.everis.javaweb.servlet;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/ServletUpdate")
+public class Servlet5 extends HttpServlet{
+	
+
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="com.ibm.ast.ws.jaxws.creation.ui.widget.JaxWSClientWidget.wsdlFileText_">
+		<item value="Crud.wsdl"/>
+	</list>
+	<list key="com.ibm.ast.ws.jaxws.creation.ui.widget.JaxWSClientWidget.wsdlFolderText_">
+	</list>
+	<list key="org.eclipse.jst.ws.internal.consumption.ui.widgets.test.ClientTestWidget.wsdlFolderText_">
+	</list>
+	<list key="com.ibm.ast.ws.jaxws.creation.ui.widget.JaxWSBottomUpWSDLConfigWidget.wsdlTargetNamespace">
+		<item value="http://services.ws.javaweb.everis.com.mx/"/>
+		<item value="http://service.javaweb.everis.com.mx/"/>
+	</list>
+	<list key="org.eclipse.jst.ws.internal.consumption.ui.widgets.test.ClientTestWidget.wsdlFileText_">
+		<item value="CrudService.wsdl"/>
+	</list>
+	<list key="org.eclipse.jst.ws.internal.consumption.ui.widgets.test.ClientTestWidget.delegateClassName">
+		<item value="mx.com.everis.javaweb.ws.services.CrudDelegate"/>
+		<item value="mx.com.everis.javaweb.service.webDelegate"/>
+	</list>
+	<list key="com.ibm.ast.ws.jaxws.creation.ui.widget.JaxWSBottomUpWSDLConfigWidget.wsdlPortName">
+		<item value="CrudPort"/>
+		<item value="webPort"/>
+	</list>
+	<list key="com.ibm.ast.ws.jaxws.creation.ui.widget.JaxWSBottomUpWSDLConfigWidget.wsdlServiceName">
+		<item value="CrudService"/>
+		<item value="webService"/>
+	</list>
+</section>

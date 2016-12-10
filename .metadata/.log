@@ -1,0 +1,454 @@
+!SESSION 2016-12-09 22:34:41.450 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+This is a continuation of log file C:\Users\Luis\workspaceTaller\.metadata\.bak_0.log
+Created Time: 2016-12-09 22:35:04.017
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-12-09 22:35:04.018
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin org.eclipse.cft.server.branding.core.
+
+!ENTRY org.eclipse.core.net 4 0 2016-12-09 22:35:04.551
+!MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error 'No se encontró la dirección URL de configuración automática del proxy.
+' #12180.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-12-09 22:35:08.699
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Luis'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-12-09 22:35:15.427
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-12-09 22:35:15.431
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2016-12-09 22:35:31.358
+!MESSAGE Could not auto-share project CrudR
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does not match that on disk for project 'CrudR'.
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2016-12-09 22:35:31.359
+!MESSAGE Provided SVN information does not match that on disk for project 'CrudR'.
+
+!ENTRY org.eclipse.dltk.core 4 0 2016-12-09 22:36:07.952
+!MESSAGE Plug-in "org.eclipse.dltk.core.index.sql" was unable to instantiate class "org.eclipse.dltk.internal.core.index.sql.SqlIndexer".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in "org.eclipse.dltk.core.index.sql" was unable to instantiate class "org.eclipse.dltk.internal.core.index.sql.SqlIndexer".
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:194)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:186)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.internal.core.index2.IndexerManager.getIndexer(IndexerManager.java:78)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getIndexerParticipant(ModelAccess.java:358)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getElementResolver(ModelAccess.java:395)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:283)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:270)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:263)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findMethods(ModelAccess.java:137)
+	at org.eclipse.php.internal.core.model.PhpModelAccess.findMethods(PhpModelAccess.java:59)
+	at org.eclipse.php.internal.core.PHPCorePlugin.initializeAfterLoad(PHPCorePlugin.java:439)
+	at org.eclipse.php.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:29)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.IllegalStateException: DbFactory not available
+	at org.eclipse.dltk.internal.core.index.sql.SqlIndexer.<init>(SqlIndexer.java:55)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	... 14 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2016-12-09 22:36:07.952
+!MESSAGE Plug-in "org.eclipse.dltk.core.index.sql" was unable to instantiate class "org.eclipse.dltk.internal.core.index.sql.SqlIndexer".
+!STACK 0
+java.lang.IllegalStateException: DbFactory not available
+	at org.eclipse.dltk.internal.core.index.sql.SqlIndexer.<init>(SqlIndexer.java:55)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.internal.core.index2.IndexerManager.getIndexer(IndexerManager.java:78)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getIndexerParticipant(ModelAccess.java:358)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getElementResolver(ModelAccess.java:395)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:283)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:270)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:263)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findMethods(ModelAccess.java:137)
+	at org.eclipse.php.internal.core.model.PhpModelAccess.findMethods(PhpModelAccess.java:59)
+	at org.eclipse.php.internal.core.PHPCorePlugin.initializeAfterLoad(PHPCorePlugin.java:439)
+	at org.eclipse.php.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:29)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.dltk.core 4 0 2016-12-09 22:36:07.953
+!MESSAGE Plug-in "org.eclipse.dltk.core.index.sql" was unable to instantiate class "org.eclipse.dltk.internal.core.index.sql.SqlIndexer".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in "org.eclipse.dltk.core.index.sql" was unable to instantiate class "org.eclipse.dltk.internal.core.index.sql.SqlIndexer".
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:194)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:186)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.internal.core.index2.IndexerManager.getIndexer(IndexerManager.java:78)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getIndexerParticipant(ModelAccess.java:358)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getElementResolver(ModelAccess.java:395)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:283)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:270)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:263)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findTypes(ModelAccess.java:203)
+	at org.eclipse.php.internal.core.model.PhpModelAccess.findTypes(PhpModelAccess.java:148)
+	at org.eclipse.php.internal.core.PHPCorePlugin.initializeAfterLoad(PHPCorePlugin.java:444)
+	at org.eclipse.php.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:29)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.IllegalStateException: DbFactory not available
+	at org.eclipse.dltk.internal.core.index.sql.SqlIndexer.<init>(SqlIndexer.java:55)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	... 14 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2016-12-09 22:36:07.953
+!MESSAGE Plug-in "org.eclipse.dltk.core.index.sql" was unable to instantiate class "org.eclipse.dltk.internal.core.index.sql.SqlIndexer".
+!STACK 0
+java.lang.IllegalStateException: DbFactory not available
+	at org.eclipse.dltk.internal.core.index.sql.SqlIndexer.<init>(SqlIndexer.java:55)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.internal.core.index2.IndexerManager.getIndexer(IndexerManager.java:78)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getIndexerParticipant(ModelAccess.java:358)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getElementResolver(ModelAccess.java:395)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:283)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:270)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:263)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findTypes(ModelAccess.java:203)
+	at org.eclipse.php.internal.core.model.PhpModelAccess.findTypes(PhpModelAccess.java:148)
+	at org.eclipse.php.internal.core.PHPCorePlugin.initializeAfterLoad(PHPCorePlugin.java:444)
+	at org.eclipse.php.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:29)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.dltk.core 4 0 2016-12-09 22:36:07.954
+!MESSAGE Plug-in "org.eclipse.dltk.core.index.sql" was unable to instantiate class "org.eclipse.dltk.internal.core.index.sql.SqlIndexer".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in "org.eclipse.dltk.core.index.sql" was unable to instantiate class "org.eclipse.dltk.internal.core.index.sql.SqlIndexer".
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:194)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:186)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.internal.core.index2.IndexerManager.getIndexer(IndexerManager.java:78)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getIndexerParticipant(ModelAccess.java:358)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getElementResolver(ModelAccess.java:395)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:283)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:270)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:263)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findFields(ModelAccess.java:70)
+	at org.eclipse.php.internal.core.model.PhpModelAccess.findFields(PhpModelAccess.java:39)
+	at org.eclipse.php.internal.core.PHPCorePlugin.initializeAfterLoad(PHPCorePlugin.java:449)
+	at org.eclipse.php.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:29)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.IllegalStateException: DbFactory not available
+	at org.eclipse.dltk.internal.core.index.sql.SqlIndexer.<init>(SqlIndexer.java:55)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	... 14 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2016-12-09 22:36:07.954
+!MESSAGE Plug-in "org.eclipse.dltk.core.index.sql" was unable to instantiate class "org.eclipse.dltk.internal.core.index.sql.SqlIndexer".
+!STACK 0
+java.lang.IllegalStateException: DbFactory not available
+	at org.eclipse.dltk.internal.core.index.sql.SqlIndexer.<init>(SqlIndexer.java:55)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.internal.core.index2.IndexerManager.getIndexer(IndexerManager.java:78)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getIndexerParticipant(ModelAccess.java:358)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getElementResolver(ModelAccess.java:395)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:283)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:270)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:263)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findFields(ModelAccess.java:70)
+	at org.eclipse.php.internal.core.model.PhpModelAccess.findFields(PhpModelAccess.java:39)
+	at org.eclipse.php.internal.core.PHPCorePlugin.initializeAfterLoad(PHPCorePlugin.java:449)
+	at org.eclipse.php.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:29)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.dltk.core 4 0 2016-12-09 22:36:07.956
+!MESSAGE Plug-in "org.eclipse.dltk.core.index.sql" was unable to instantiate class "org.eclipse.dltk.internal.core.index.sql.SqlIndexer".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in "org.eclipse.dltk.core.index.sql" was unable to instantiate class "org.eclipse.dltk.internal.core.index.sql.SqlIndexer".
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:194)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:186)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.internal.core.index2.IndexerManager.getIndexer(IndexerManager.java:78)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getIndexerParticipant(ModelAccess.java:358)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getElementResolver(ModelAccess.java:395)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:283)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:270)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:263)
+	at org.eclipse.php.internal.core.model.PhpModelAccess.findIncludes(PhpModelAccess.java:199)
+	at org.eclipse.php.internal.core.PHPCorePlugin.initializeAfterLoad(PHPCorePlugin.java:454)
+	at org.eclipse.php.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:29)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.IllegalStateException: DbFactory not available
+	at org.eclipse.dltk.internal.core.index.sql.SqlIndexer.<init>(SqlIndexer.java:55)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	... 13 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2016-12-09 22:36:07.956
+!MESSAGE Plug-in "org.eclipse.dltk.core.index.sql" was unable to instantiate class "org.eclipse.dltk.internal.core.index.sql.SqlIndexer".
+!STACK 0
+java.lang.IllegalStateException: DbFactory not available
+	at org.eclipse.dltk.internal.core.index.sql.SqlIndexer.<init>(SqlIndexer.java:55)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.internal.core.index2.IndexerManager.getIndexer(IndexerManager.java:78)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getIndexerParticipant(ModelAccess.java:358)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getElementResolver(ModelAccess.java:395)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:283)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:270)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:263)
+	at org.eclipse.php.internal.core.model.PhpModelAccess.findIncludes(PhpModelAccess.java:199)
+	at org.eclipse.php.internal.core.PHPCorePlugin.initializeAfterLoad(PHPCorePlugin.java:454)
+	at org.eclipse.php.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:29)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui.navigator 4 0 2016-12-09 22:36:08.328
+!MESSAGE Cannot find navigator content extension (using triggerPoints) for object "org.eclipse.jst.ws.jaxws.dom.integration.navigator.DOMAdapterFactoryContentProvider$LoadingWsProject@cdf4238" parent path: "P/CrudR".  Check that you have an expression for this object in a navigatorContent triggerPoints or enablement.
+
+!ENTRY org.eclipse.ui.navigator 4 0 2016-12-09 22:36:08.329
+!MESSAGE Cannot find navigator content extension (using triggerPoints) for object "org.eclipse.jst.ws.jaxws.dom.integration.navigator.DOMAdapterFactoryContentProvider$LoadingWsProject@cdf4238" parent path: "P/CrudR".  Check that you have an expression for this object in a navigatorContent triggerPoints or enablement.
+
+!ENTRY org.eclipse.ui.navigator 4 0 2016-12-09 22:36:08.331
+!MESSAGE Cannot find navigator content extension (using triggerPoints) for object "org.eclipse.jst.ws.jaxws.dom.integration.navigator.DOMAdapterFactoryContentProvider$LoadingWsProject@cdf4238" parent path: "P/CrudR".  Check that you have an expression for this object in a navigatorContent triggerPoints or enablement.
+
+!ENTRY org.eclipse.ui.navigator 4 0 2016-12-09 22:36:08.332
+!MESSAGE Cannot find navigator content extension (using triggerPoints) for object "org.eclipse.jst.ws.jaxws.dom.integration.navigator.DOMAdapterFactoryContentProvider$LoadingWsProject@cdf4238" parent path: "P/CrudR".  Check that you have an expression for this object in a navigatorContent triggerPoints or enablement.
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.280
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.281
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.283
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.296
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.299
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.301
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.303
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.304
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.306
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.309
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.310
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.312
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.316
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.317
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.319
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.322
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.323
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.326
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.332
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.333
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-12-09 22:36:10.337
+!MESSAGE CrudR does not exist
+
+!ENTRY org.eclipse.core.resources 4 2 2016-12-09 22:42:09.438
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.RuntimeException: Exception(s) unloading resources - check log files
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.removeAndUnloadAllResources(ProjectResourceSetImpl.java:892)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.release(ProjectResourceSetImpl.java:866)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.release(ResourceSetWorkbenchEditSynchronizer.java:222)
+	at org.eclipse.jem.util.emf.workbench.ResourceSetWorkbenchSynchronizer.resourceChanged(ResourceSetWorkbenchSynchronizer.java:184)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.resourceChanged(ResourceSetWorkbenchEditSynchronizer.java:137)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:265)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:368)
+	at org.eclipse.core.internal.resources.Resource.broadcastPreDeleteEvent(Resource.java:1884)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:766)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:323)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2016-12-09 22:43:09.354
+!MESSAGE Could not auto-share project ClienteWS
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does not match that on disk for project 'ClienteWS'.
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2016-12-09 22:43:09.354
+!MESSAGE Provided SVN information does not match that on disk for project 'ClienteWS'.
+
+!ENTRY org.eclipse.core.resources 4 2 2016-12-09 22:47:46.709
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.RuntimeException: Exception(s) unloading resources - check log files
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.removeAndUnloadAllResources(ProjectResourceSetImpl.java:892)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.release(ProjectResourceSetImpl.java:866)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.release(ResourceSetWorkbenchEditSynchronizer.java:222)
+	at org.eclipse.jem.util.emf.workbench.ResourceSetWorkbenchSynchronizer.resourceChanged(ResourceSetWorkbenchSynchronizer.java:184)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.resourceChanged(ResourceSetWorkbenchEditSynchronizer.java:137)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:265)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:368)
+	at org.eclipse.core.internal.resources.Resource.broadcastPreDeleteEvent(Resource.java:1884)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:766)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:323)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2016-12-09 22:49:19.007
+!MESSAGE Could not auto-share project ClienteWS
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does not match that on disk for project 'ClienteWS'.
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2016-12-09 22:49:19.007
+!MESSAGE Provided SVN information does not match that on disk for project 'ClienteWS'.
+
+!ENTRY org.eclipse.core.resources 4 2 2016-12-09 22:55:08.876
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.RuntimeException: Exception(s) unloading resources - check log files
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.removeAndUnloadAllResources(ProjectResourceSetImpl.java:892)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.release(ProjectResourceSetImpl.java:866)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.release(ResourceSetWorkbenchEditSynchronizer.java:222)
+	at org.eclipse.jem.util.emf.workbench.ResourceSetWorkbenchSynchronizer.resourceChanged(ResourceSetWorkbenchSynchronizer.java:184)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.resourceChanged(ResourceSetWorkbenchEditSynchronizer.java:137)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:265)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:368)
+	at org.eclipse.core.internal.resources.Resource.broadcastPreDeleteEvent(Resource.java:1884)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:766)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:323)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2016-12-09 22:56:04.692
+!MESSAGE Could not auto-share project ClienteWS
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does not match that on disk for project 'ClienteWS'.
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2016-12-09 22:56:04.692
+!MESSAGE Provided SVN information does not match that on disk for project 'ClienteWS'.

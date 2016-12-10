@@ -1,0 +1,8 @@
+package mx.com.everis.javaweb.servlet;
+
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet("/ServletUpdate")
+public class Servlet5 {
+
+}

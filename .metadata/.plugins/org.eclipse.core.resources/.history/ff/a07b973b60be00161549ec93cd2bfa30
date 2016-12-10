@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://services.ws.javaweb.everis.com.mx" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://services.ws.javaweb.everis.com.mx" xmlns:intf="http://services.ws.javaweb.everis.com.mx" xmlns:tns1="http://model.javaweb.everis.com.mx" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://services.ws.javaweb.everis.com.mx" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://model.javaweb.everis.com.mx"/>
+   <element name="deletePerson">
+    <complexType>
+     <sequence>
+      <element name="persona" type="tns1:Personaje"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="deletePersonResponse">
+    <complexType>
+     <sequence>
+      <element name="deletePersonReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="insertPerson">
+    <complexType>
+     <sequence>
+      <element name="persona" type="tns1:Personaje"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="insertPersonResponse">
+    <complexType>
+     <sequence>
+      <element name="insertPersonReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="updatePerson">
+    <complexType>
+     <sequence>
+      <element name="persona" type="tns1:Personaje"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="updatePersonResponse">
+    <complexType>
+     <sequence>
+      <element name="updatePersonReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="listaP">
+    <complexType/>
+   </element>
+   <element name="listaPResponse">
+    <complexType>
+     <sequence>
+      <element name="listaPReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="lista">
+    <complexType/>
+   </element>
+   <element name="listaResponse">
+    <complexType>
+     <sequence>
+      <element name="listaReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://model.javaweb.everis.com.mx" xmlns="http://www.w3.org/2001/XMLSchema">
+   <complexType name="Personaje">
+    <sequence>
+     <element name="clave" type="xsd:long"/>
+     <element name="empresa" nillable="true" type="xsd:string"/>
+     <element name="nombre" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="listaRequest">
+
+      <wsdl:part element="impl:lista" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="listaResponse">
+
+      <wsdl:part element="impl:listaResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="listaPResponse">
+
+      <wsdl:part element="impl:listaPResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="listaPRequest">
+
+      <wsdl:part element="impl:listaP" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updatePersonRequest">
+
+      <wsdl:part element="impl:updatePerson" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="insertPersonRequest">
+
+      <wsdl:part element="impl:insertPerson" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updatePersonResponse">
+
+      <wsdl:part element="impl:updatePersonResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="deletePersonResponse">
+
+      <wsdl:part element="impl:deletePersonResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="insertPersonResponse">
+
+      <wsdl:part element="impl:insertPersonResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="deletePersonRequest">
+
+      <wsdl:part element="impl:deletePerson" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="Crud">
+
+      <wsdl:operation name="deletePerson">
+
+         <wsdl:input message="impl:deletePersonRequest" name="deletePersonRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:deletePersonResponse" name="deletePersonResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="insertPerson">
+
+         <wsdl:input message="impl:insertPersonRequest" name="insertPersonRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:insertPersonResponse" name="insertPersonResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updatePerson">
+
+         <wsdl:input message="impl:updatePersonRequest" name="updatePersonRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updatePersonResponse" name="updatePersonResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="listaP">
+
+         <wsdl:input message="impl:listaPRequest" name="listaPRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:listaPResponse" name="listaPResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="lista">
+
+         <wsdl:input message="impl:listaRequest" name="listaRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:listaResponse" name="listaResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="CrudSoapBinding" type="impl:Crud">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="deletePerson">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="deletePersonRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="deletePersonResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="insertPerson">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="insertPersonRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="insertPersonResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updatePerson">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updatePersonRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updatePersonResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="listaP">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="listaPRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="listaPResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="lista">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="listaRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="listaResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="CrudService">
+
+      <wsdl:port binding="impl:CrudSoapBinding" name="Crud">
+
+         <wsdlsoap:address location="http://localhost:8082/Crud/services/Crud"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

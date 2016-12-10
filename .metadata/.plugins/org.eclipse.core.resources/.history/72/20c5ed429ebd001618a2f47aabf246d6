@@ -1,0 +1,12 @@
+package mx.com.everis.javaweb.ws.services;
+
+import java.util.List;
+
+import mx.com.everis.javaweb.model.Personaje;
+
+public interface Actions {
+	public boolean insertPerson(Personaje persona);
+	//public List<Personaje> lista();
+	public boolean updatePerson(long clave, String nombre, String empresa);
+	public boolean deletePerson(long clave);
+}
